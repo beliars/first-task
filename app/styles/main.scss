@@ -11,7 +11,7 @@ $container-lg: 970px;
 
 @font-face {
     font-family: "Myriad";
-    src: url(../fonts/MyriadPro-Regular.otf); 
+    src: url(../fonts/MyriadPro-Regular.otf);
  }
 
 $open_sans: 'Open Sans', sans-serif;
@@ -19,6 +19,7 @@ $open_sans_condensed: 'Open Sans Condensed', sans-serif;
 
 body {
     font-family: $open_sans;
+    min-width: 700px;
 }
 
 header {
@@ -27,10 +28,10 @@ header {
     height: 66px;
 
     ul {
-        
+
         margin-top: 10px;
         margin-left: 300px!important;
-        
+
         li {
 
             padding-left: 10px!important;
@@ -38,7 +39,7 @@ header {
 
             &:hover {
                 background-color: #3fba02;
-            }           
+            }
         }
 
         a {
@@ -47,7 +48,7 @@ header {
             text-align: left;
             text-transform: uppercase;
             line-height: 43px;
-            
+
             &:hover {
             text-decoration: none;
             color: #fff;
@@ -75,7 +76,7 @@ header {
         }
 
         @media (max-width: 481px) {
-            
+
             li:first-child {
                 padding-left: 10px!important;
             }
@@ -84,7 +85,7 @@ header {
                 font-size: 14px;
             }
         }
-        
+
     }
 
   .logo {
@@ -96,7 +97,7 @@ header {
 }
 
 @media (max-width: 992px) {
-  
+
    header .logo {
       display: none;
   }
@@ -121,48 +122,41 @@ header {
         height: 108px;
         position: relative;
         top: 385px;
-        margin-left: -35px;
-        margin-right: -44px;
 
         h2 {
             position: relative;
             top: 25%;
             color: #fff;
             font-family: "Myriad";
-            font-size: 48px;
+            font-size: 36px;
             text-transform: uppercase;
-            margin-top: 5px;
-            margin-left: 13%;
+            margin-top: 10px;
+            padding-left: 45px;
+
+            @media(max-width: 992px) {
+                font-size: 32px;
+                margin-top: 15px;
+            }
         }
-            
+
         p {
             position: relative;
             top: 25%;
             line-height: 60px;
-            background-color: #3fba02;
+            text-align: center;
             color: #fff;
             border: none;
-            padding-left: 15px;
-            padding-right: 15px;
             font-size: 24px;
             text-transform: uppercase;
             cursor: pointer;
-            margin-right: 5%;
+            padding: 0;
 
+            span {
+                background-color: #3fba02;
+                line-height: 40px;
+                padding: 10px 20px;
+            }
         }
-
-        @media (max-width: 550px) { 
-             p {
-                 float: none!important;
-                 margin-left: 20px;
-                 margin-right: 20px;
-                 text-align: center;
-            }
-
-            h2 {
-                display: none;
-            }
-         }
     }
 }
 
@@ -219,7 +213,7 @@ header {
         }
 
         p {
-            padding: 0 22px; 
+            padding: 0 22px;
             max-height: 120px;
             overflow: hidden;
         }
@@ -262,7 +256,7 @@ header {
 }
 
 .section-gallery {
-    
+
     h2 {
         color: #444;
         font-family: $open_sans_condensed;
@@ -285,125 +279,50 @@ header {
 }
 
 .section-sign_up {
-    height: 136px;
+
     background-image: url(../images/lessons-bg.png);
-    position: relative;
+
+    .container {
+        height: 136px;
+        text-align: center;
+    }
 
     h2 {
         position: relative;
         top: 25%;
         margin: 0;
         color: #555;
-        font-size: 40px;
+        font-size: 36px;
         font-weight: 300;
         line-height: 59px;
         text-transform: uppercase;
-        margin-left: 15%;
     }
 
     p {
         position: relative;
         top: 25%;
         color: #fff;
-        font-size: 24px;
+        font-size: 20px;
         font-weight: 400;
         line-height: 60px;
         text-transform: uppercase;
-        background-color: #3fba02;
-        padding-left: 30px;
-        padding-right: 30px;
-        margin-right: 15%;
-    }
 
-    @media (max-width: 1150px) {
-       
-        h2 {
-             margin-left: 10%;
-        }
-
-        p {
-            margin-right: 10%;
+        span {
+            background-color: #3fba02;
+            line-height: 40px;
+            padding: 10px 20px;
         }
     }
-
-     @media (max-width: 998px) {
-       
-        h2 {
-             margin-left: 5%;
-        }
-
-        p {
-            margin-right: 5%;
-        }
-    }
-
-    @media (max-width: 998px) {
-       
-        h2 {
-             font-size: 30px;
-        }
-
-        p {
-            font-size: 22px;
-        }
-    }
-
-    @media (max-width: 750px) {
-       
-        h2 {
-             font-size: 24px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    }
-
-    @media (max-width: 750px) {
-       
-        h2 {
-             font-size: 24px;
-        }
-
-        p {
-            font-size: 18px;
-        }
-    }
-
-    @media (max-width: 630px) {
-       
-        h2 {
-             font-size: 24px;
-             margin-left: 2%;
-        }
-
-        p {
-            font-size: 16px;
-            margin-right: 2%;
-        }
-    }
-
-    @media (max-width: 560px) {
-       
-        h2 {
-             display: none;
-        }
-
-        p {
-            font-size: 16px;
-            margin-right: 20px;
-            margin-left: 20px;
-            float: none!important;
-            text-align: center;
-        }
-    }
-
 }
 
 .section-contacts {
 
     background-color: #89cfff;
     border-bottom: 2px solid #fff;
+
+    @media(max-width: 768px) {
+        text-align: center;
+    }
 
     h3 {
         color: #fff;
@@ -422,7 +341,7 @@ header {
         text-transform: uppercase;
         margin-bottom: 0;
         margin-top: 20px;
-        
+
         &::first-child {
             margin-top: 10px;
         }
